@@ -30,7 +30,9 @@ These instructions will help you set up the library and start using it in your p
    ```
 4. Add barcode event.
    ```
-   scanner.BarcodeEvent += (object sender, BarcodeScanner.BarcodeEventArgs e) => {Console.WriteLine(e.barcode)};
+   scanner.BarcodeEvent += (object sender, BarcodeScanner.BarcodeEventArgs e) => {
+       Console.WriteLine(e.barcode);
+   };
    ```
 5. The scanned barcode will be displayed in the app.
 6. Disconnect from the Zebra scanner.
