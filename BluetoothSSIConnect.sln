@@ -5,7 +5,14 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BluetoothSSIConnect", "BluetoothSSIConnect\BluetoothSSIConnect.csproj", "{C575EFA9-3CD7-49E8-A34E-40365419CE8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample", "Sample\Sample.csproj", "{519C681B-984E-495D-A32E-8E6E18E4C218}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample", "Sample\Sample.csproj", "{519C681B-984E-495D-A32E-8E6E18E4C218}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleMin", "SampleMin\SampleMin.csproj", "{FE844D23-B94C-4391-BACB-A7DE70B5807C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{51826570-B549-473C-9DD5-B14B079DDB82}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +28,10 @@ Global
 		{519C681B-984E-495D-A32E-8E6E18E4C218}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{519C681B-984E-495D-A32E-8E6E18E4C218}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{519C681B-984E-495D-A32E-8E6E18E4C218}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE844D23-B94C-4391-BACB-A7DE70B5807C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE844D23-B94C-4391-BACB-A7DE70B5807C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE844D23-B94C-4391-BACB-A7DE70B5807C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE844D23-B94C-4391-BACB-A7DE70B5807C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
