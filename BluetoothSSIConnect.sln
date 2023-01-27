@@ -5,7 +5,7 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BluetoothSSIConnect", "BluetoothSSIConnect\BluetoothSSIConnect.csproj", "{C575EFA9-3CD7-49E8-A34E-40365419CE8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShowCase", "ShowCase\ShowCase.csproj", "{519C681B-984E-495D-A32E-8E6E18E4C218}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample", "Sample\Sample.csproj", "{519C681B-984E-495D-A32E-8E6E18E4C218}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
