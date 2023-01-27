@@ -1,49 +1,59 @@
-# Bluetooth SSI Connection with Zebra Barcode Scanner (C#)
+# Bluetooth SSI Connection Library for Zebra Barcode Scanners (C#)
 
-This project demonstrates how to establish a Bluetooth SSI connection with a Zebra barcode scanner and use it to scan barcodes using C#.
+This library allows developers to easily establish a Bluetooth SSI (Serial Port Profile) connection with a Zebra barcode scanner and use it to scan barcodes using C#.
 
 ## Getting Started
 
-These instructions will help you set up the project and establish a connection with the Zebra scanner.
+These instructions will help you set up the library and start using it in your project.
 
 ### Prerequisites
 
 * A Zebra barcode scanner that supports Bluetooth SSI Scanner Serial (Serial Port Profile), e.g. RFD40 Premium Plus, RFD90
 * A device (e.g. PC, laptop) with Bluetooth capability and support for SPP
-* Visual Studio
 
-### Installing
+### Installation
 
-1. Clone or download the project onto your device.
-2. Open the project in Visual Studio.
-3. Connect the Zebra scanner to your device via Bluetooth.
-4. Run the project on your device.
+1. Add the library to your project dependencies.
+   * Reference the dll file in your project
+2. Initialize the library in your code by creating a new instance of the `BarcodeScanner` class.
 
 ### Usage
 
-1. Press the "Connect" button to establish a connection with the Zebra scanner.
-2. Once connected, the scanner will be in "Trigger Mode", meaning it will automatically scan any barcode that is presented to it.
-3. The scanned barcode will be displayed in the app.
+1. Make sure that Zebra scanner is ready to connect.
+2. Find Bluetooth address of the device.
+   * Use e.g. InTheHand.Net.Personal library
+   * Check in the device properties: Bluetooth Tab -> Unique identifier
+3. Connect to the Zebra scanner using the `Connect()` method.
+   ```
+   BarcodeScanner scanner = new BarcodeScanner(deviceAddress);
+   scanner.Connect();
+   ```
+4. Add barcode event.
+   ```
+   scanner.BarcodeEvent += (object sender, BarcodeScanner.BarcodeEventArgs e) => {Console.WriteLine(e.barcode)};
+   ```
+5. The scanned barcode will be displayed in the app.
+6. Disconnect from the Zebra scanner.
+   ```
+   scanner.Disconnect();
+   ```
 
 ### Example
-
 ```
-using InTheHand.Net.Sockets;
 using BluetoothSSIConnect;
 
-BarcodeScanner scanner = new BarcodeScanner("48A493BA143A");
+BarcodeScanner scanner = new BarcodeScanner("A1B2C3D4E5F5");
 scanner.Connect();
 scanner.BarcodeEvent += (object sender, BarcodeScanner.BarcodeEventArgs e) => {
     Console.WriteLine($"{e.barcode} [{e.type}]");
 };
 Console.ReadLine();
 scanner.Disconnect();
-
 ```
 
 ## Functionality
 
-This project demonstrates how to establish a Bluetooth SSI connection with a Zebra barcode scanner and use it to scan barcodes using C#. The app allows the user to connect to the scanner and display the scanned barcode.
+This library allows developers to easily establish a Bluetooth SSI connection with a Zebra barcode scanner and use it to scan barcodes using C#. The library provides methods to connect, disconnect and get scanned barcode from the scanner.
 
 ## Built With
 
