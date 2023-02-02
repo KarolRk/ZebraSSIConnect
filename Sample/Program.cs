@@ -1,6 +1,6 @@
 ﻿
 using InTheHand.Net.Sockets;
-using BluetoothSSIConnect;
+using ZebraSSIConnect;
 
 
 class Program

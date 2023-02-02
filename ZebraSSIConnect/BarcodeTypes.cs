@@ -1,4 +1,4 @@
-﻿namespace BluetoothSSIConnect
+﻿namespace ZebraSSIConnect
 {
     internal class BarcodeTypes
     {

@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BluetoothSSIConnect\BluetoothSSIConnect.csproj" />
+    <ProjectReference Include="..\ZebraSSIConnect\ZebraSSIConnect.csproj" />
   </ItemGroup>
 
   <ItemGroup>

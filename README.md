@@ -42,7 +42,7 @@ These instructions will help you set up the library and start using it in your p
 
 ### Example
 ```
-using BluetoothSSIConnect;
+using ZebraSSIConnect;
 
 BarcodeScanner scanner = new BarcodeScanner("A1B2C3D4E5F5");
 scanner.Connect();

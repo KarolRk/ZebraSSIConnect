@@ -7,7 +7,7 @@ using System.Net.Sockets;
 using System.Reflection;
 using System.Diagnostics;
 
-namespace BluetoothSSIConnect
+namespace ZebraSSIConnect
 {
     public class BarcodeScanner
     {
